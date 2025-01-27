@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* これを追加することで、パディングとボーダーを含めたボックスサイズが指定できるようになります */
+}
+
+h1 {
+    text-align: center;
+    color: #28a745; /* 緑色 */
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+/* スマホ向けのスタイル調整 */
+@media (max-width: 600px) {
+    p {
+        font-size: 16px; /* スマホでは少し小さめのフォントサイズ */
+    }
+    
+    a {
+        padding: 8px 16px; /* スマホではボタンのサイズを少し小さく */
+        font-size: 14px; /* フォントサイズも少し小さく */
+    }
+    
+    footer p {
+        font-size: 14px; /* フッターのフォントサイズも調整 */
+    }
+}
+
+/* インスタグラムリンクのスタイル */
+footer p a {
+    color: #ff69b4; /* ピンク色 */
+    background-color: transparent; /* 背景色を透明に */
+    padding: 0; /* パディングをゼロに */
+    text-decoration: none; /* 下線を消す */
+}
+
+footer p a:hover {
+    color: #ff1493; /* ホバー時の色 */
+}
